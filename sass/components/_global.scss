@@ -1,0 +1,158 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 4vw;
+}
+
+.button {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 5px solid var(--primary);
+  padding: 10px 25px;
+  transition: 0.3s;
+  background-color: transparent;
+  max-width: fit-content;
+}
+
+.button:hover {
+  color: tomato;
+  border-color: tomato;
+}
+
+.button-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--constrast p{
+    color: #fff;
+  }
+}
+
+.button-cta p {
+  margin-block: 30px 20px;
+  text-align: center;
+}
+
+.title-section {
+  color: var(--secondary);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 8px auto;
+  }
+
+  &--constrast {
+    color: var(--third);
+
+    &::after {
+      background-color: var(--third);
+    }
+  }
+
+  &--primary {
+    color: var(--primary);
+
+    &::after {
+      background-color: var(--primary);
+    }
+  }
+
+  &--left {
+    text-align: left;
+
+    &::after {
+      margin-inline: 8px;
+    }
+  }
+}
+
+.block-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  p {
+    color: var(--third);
+    font-style: italic;
+    max-width: 35ch;
+    text-align: center;
+    
+    &::before,&::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: var(--third);
+      margin: 8px auto;
+    }
+  }
+
+  cite {
+    color: var(--third);
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &--footer{
+    background-image: url(/images/bg-footer.jpg);
+    min-height: 23vh;
+    background-size: cover;
+    justify-content: center;
+    padding-block: 30px;
+    margin-bottom: 0px;
+  }
+
+  &--contrast {
+    margin-bottom: 50px;
+    p, cite {
+      color: #000;
+    }
+  }
+}
+
+.page-banner {
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  padding-block: 30px;
+  margin-bottom: 50px;
+
+  &--about {
+    background-image: url(../../images/bg-sobre.jpg);
+  }
+  &--products {
+    background-image: url(../../images/bg-produtos.jpg);
+  }
+  &--portfolio {
+    background-image: url(../../images/bg-portfolio.jpg);
+  }
+  &--contact {
+    background-image: url(../../images/bg-contato.jpg);
+  }
+
+  .title-section{
+    margin-bottom: 7px;
+    font-size: 3.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

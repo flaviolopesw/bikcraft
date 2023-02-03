@@ -1,0 +1,49 @@
+:root {
+  --primary: #fec63e;
+  --secondary: #000;
+  --third: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+figure {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Noto Sans',sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikecraft - Produtos</title>
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <!-- JS Import -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html"><img src="images/bikcraft.svg" alt="Bikcraft logo" /></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="about-us.html" class="menu__item">Sobre</a></li>
+                    <li><a href="products.html" class="menu__item">Produtos</a></li>
+                    <li><a href="portfolio.html" class="menu__item">Portfólio</a></li>
+                    <li><a href="contact.html" class="menu__item">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-banner page-banner--products">
+            <h1 class="title-section title-section--constrast">PRODUTOS</h1>
+            <p>Conheça mais sobre a bikcraft</p>
+        </section>
+        <section class="container product" aria-labelledby="passeio">
+            <div class="product-image product-image--tour">
+                <h2 id="passeio" class="product-title">PASSEIO</h2>
+            </div>
+            <div class="product-icon">
+                <img src="images/produtos/passeio.svg" alt="">
+            </div>
+            <img class="product-photo" src="images/produtos/bikcraft-passeio-2.jpg" alt="">
+            <div class="product-content">
+                <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                    cotidiana O verdadeiro segredo</p>
+                <ul>
+                    <li>CONFORTO</li>
+                    <li>VELOCIDADE</li>
+                    <li>DESIGN</li>
+                    <li>VERSATILIDADE</li>
+                </ul>
+            </div>
+        </section>
+        <!-- TODO: VINCULAR -->
+        <section class="container product">
+            <div class="product-image product-image--sport">
+                <h2 class="product-title">ESPORTE</h2>
+            </div>
+            <div class="product-icon">
+                <img src="images/produtos/esporte.svg" alt="">
+            </div>
+            <img class="product-photo" src="images/produtos/bikcraft-esporte-2.jpg" alt="">
+            <div class="product-content">
+                <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                    cotidiana O verdadeiro segredo</p>
+                <ul>
+                    <li>CONFORTO</li>
+                    <li>VELOCIDADE</li>
+                    <li>DESIGN</li>
+                    <li>VERSATILIDADE</li>
+                </ul>
+            </div>
+        </section>
+        <section class="container product">
+            <div class="product-image product-image--retro">
+                <h2 class="product-title">RETRÔ</h2>
+            </div>
+            <div class="product-icon">
+                <img src="images/produtos/retro.svg" alt="">
+            </div>
+            <img class="product-photo" src="images/produtos/bikcraft-retro-2.jpg" alt="">
+            <div class="product-content">
+                <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                    cotidiana O verdadeiro segredo</p>
+                <ul>
+                    <li>CONFORTO</li>
+                    <li>VELOCIDADE</li>
+                    <li>DESIGN</li>
+                    <li>VERSATILIDADE</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="budget">
+            <div class="container">
+                <h2 class="title-section title-section--primary">ORÇAMENTO</h2>
+                <form action="email-send.php" method="POST" class="budget-form budget-form--contrast">
+                    <input type="hidden" name="budget" value="true">
+                    <div class="budget-form-field">
+                        <label for="name">
+                            Nome
+                            <input type="text" name="name" id="name" required>
+                        </label>
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        <label for="phone">
+                            Telefone
+                            <input type="tel" name="phone" id="phone" required>
+                        </label>
+                        <label for="message">
+                            Mensagem
+                            <textarea name="message" id="message" rows="10"></textarea>
+                        </label>
+                        <button class="button">ENVIAR</button>
+                    </div>
+                    <div class="budget-form-field">
+                        <h3 class="title-section--primary">DADOS</h3>
+                        <ul class="contact">
+                            <li><a href="tel:11999999999">+55 11 99999-9999</a></li>
+                            <li><a href="mailto:orcamento@bikcraft.com">orcamento@bikcraft.com</a></li>
+                        </ul>
+                        <h3 class="title-section--primary">MONTE A SUA BIKCRAFT</h3>
+                        <fieldset>
+                            <legend>Escolha as especificações</legend>
+
+                            <label for="color" class="specs-bikcraft">
+                                <select name="color" id="color" required>
+                                    <option hidden value="">- Cores</option>
+                                    <option value="blue">Azul</option>
+                                    <option value="pink">Rosa</option>
+                                    <option value="red">Vermelho</option>
+                                </select>
+                            </label>
+                            <label for="style" class="specs-bikcraft">
+                                <select name="style" id="style" required>
+                                    <option hidden value="">- Estilos</option>
+                                    <option value="sport">Esporte</option>
+                                    <option value="retro">Retro</option>
+                                    <option value="tour">Passeio</option>
+                                </select>
+                            </label>
+                            <label for="accessory" class="specs-bikcraft">
+                                <select name="accessory" id="accessory" required>
+                                    <option hidden value="">- Acessórios</option>
+                                    <option value="disc">Freio a disco</option>
+                                    <option value="leather">Banco de couro</option>
+                                    <option value="guiddon">Guidão 10</option>
+                                </select>
+                            </label>
+                            <label for="measure" class="specs-bikcraft">
+                                <select name="measure" id="measure" required>
+                                    <option hidden value="">- Medidas Aro</option>
+                                    <option value="20">20</option>
+                                    <option value="26">26</option>
+                                    <option value="29">29</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <blockquote class="block-quote block-quote--footer">
+                <p>
+                    “O verdadeiro segredo da vida cotidiana está em ter um genuíno interesse por todos os detalhes da
+                    vida
+                    cotidiana”
+                </p>
+                <cite>William Morris</cite>
+            </blockquote>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-content">
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Nossa história</h2>
+                    <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da
+                        vida
+                        cotidiana O verdadeiro segredo</p>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Contato</h2>
+                    <div>
+                        <a href="tel:11 9999-9999" class="contact-link">11 9999-9999</a>
+                        <a href="mailto:contato@bikcraft.com" class="contact-link">contato@bikcraft.com</a>
+                        <p class="contact-link">Bragança Paulista, SP</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Redes sociais</h2>
+                    <ul class="social-media">
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/twitter.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">Bikcraft 2021 - Todos os direitos reservados</div>
+    </footer>
+</body>
+
+</html>

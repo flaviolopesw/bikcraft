@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikecraft - Portfólio</title>
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <!-- JS Import -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html"><img src="images/bikcraft.svg" alt="Bikcraft logo" /></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="about-us.html" class="menu__item">Sobre</a></li>
+                    <li><a href="products.html" class="menu__item">Produtos</a></li>
+                    <li><a href="portfolio.html" class="menu__item">Portfólio</a></li>
+                    <li><a href="contact.html" class="menu__item">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-banner page-banner--products">
+            <h1 class="title-section title-section--constrast">CONTATO</h1>
+            <p>Conheça mais sobre a bikcraft</p>
+        </section>
+
+        <section>
+            <div class="container">
+                <form action="email-send.php" method="POST" class="budget-form">
+                    <div class="budget-form-field">
+                        <label for="name">
+                            Nome
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label for="phone">
+                            Telefone
+                            <input type="tel" name="phone" id="phone">
+                        </label>
+                        <label for="message">
+                            Mensagem
+                            <textarea name="message" id="message" rows="10"></textarea>
+                        </label>
+                        <button class="button">ENVIAR</button>
+                    </div>
+                    <div class="budget-form-field">
+                        <h3 class="title-section--primary">DADOS</h3>
+                        <ul class="contact">
+                            <li><a href="tel:11999999999">+55 11 99999-9999</a></li>
+                            <li><a href="mailto:orcamento@bikcraft.com">orcamento@bikcraft.com</a></li>
+                            <li class="data-address"><a
+                                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7342.29329851752!2d-46.37334372251916!3d-23.055084567818913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cebcb65aee3aa3%3A0x9c28cea4366e3d79!2sJardim%20Claudia%2C%20Piracaia%20-%20SP%2C%2012970-000!5e0!3m2!1spt-BR!2sbr!4v1672858030699!5m2!1spt-BR!2sbr"
+                                    target="_blank" rel="noopener noreferrer">Rua Simples e Complicado, 70 <br> Bragança
+                                    Paulista - SP</a></li>
+                        </ul>
+                        <h3 class="title-section--primary">REDES SOCIAIS</h3>
+                        <ul class="social-media">
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer"><img
+                                        src="images/redes-sociais/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer"><img
+                                        src="images/redes-sociais/instagram.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer"><img
+                                        src="images/redes-sociais/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <iframe class="location-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7342.29329851752!2d-46.37334372251916!3d-23.055084567818913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cebcb65aee3aa3%3A0x9c28cea4366e3d79!2sJardim%20Claudia%2C%20Piracaia%20-%20SP%2C%2012970-000!5e0!3m2!1spt-BR!2sbr!4v1672858030699!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-content">
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Nossa história</h2>
+                    <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da
+                        vida
+                        cotidiana O verdadeiro segredo</p>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Contato</h2>
+                    <div>
+                        <a href="tel:11 9999-9999" class="contact-link">11 9999-9999</a>
+                        <a href="mailto:contato@bikcraft.com" class="contact-link">contato@bikcraft.com</a>
+                        <p class="contact-link">Bragança Paulista, SP</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Redes sociais</h2>
+                    <ul class="social-media">
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/twitter.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">Bikcraft 2021 - Todos os direitos reservados</div>
+    </footer>
+</body>
+
+</html>

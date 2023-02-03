@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- TODO:  GITHUB PAGES, COPY SITE, HTML EMAIL, Modal success or error, captcha, component footer and header. -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikecraft</title>
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <!-- JS Import -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html"><img src="images/bikcraft.svg" alt="Bikcraft logo" /></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="about-us.html" class="menu__item">Sobre</a></li>
+                    <li><a href="products.html" class="menu__item">Produtos</a></li>
+                    <li><a href="portfolio.html" class="menu__item">Portfólio</a></li>
+                    <li><a href="contact.html" class="menu__item">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="home-banner">
+            <div class="container">
+                <div class="home-content">
+                    <h1 class="home-title">Bicicletas feitas a mão</h1>
+                    <blockquote class="block-quote">
+                        <p>
+                            "Não tenha nada em sua casa que você não considere util ou
+                            acredito ser bonito"
+                        </p>
+                        <cite>William Morris</cite>
+                    </blockquote>
+                    <a href="#" class="button">Orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-products">
+            <div class="container">
+                <h2 class="title-section">Produtos</h2>
+                <div class="product-list">
+                    <figure class="product-item">
+                        <div class="product-item-bg">
+                            <img src="images/produtos/passeio.svg" alt="Bicicleta de passeio" />
+                        </div>
+                        <div class="product-description">
+                            <h3 class="title-section">Passeio</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.</p>
+                        </div>
+                    </figure>
+                    <figure class="product-item">
+                        <div class="product-item-bg">
+                            <img src="images/produtos/esporte.svg" alt="Bicicleta esportiva" />
+                        </div>
+                        <div class="product-description">
+                            <h3 class="title-section">Esporte</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.</p>
+                        </div>
+                    </figure>
+                    <figure class="product-item">
+                        <div class="product-item-bg">
+                            <img src="images/produtos/retro.svg" alt="Bicicleta retro" />
+                        </div>
+                        <div class="product-description">
+                            <h3 class="title-section">Retro</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="button-cta">
+                    <p>Clique aqui e veja os detalhes dos produtos</p>
+                    <a href="#" class="button">Orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="title-section title-section--primary">Portfólio</h2>
+                <div class="portfolio-grid">
+                    <img src="images/portfolio/retro.jpg" alt="">
+                    <img src="images/portfolio/passeio.jpg" alt="">
+                    <img src="images/portfolio/esporte.jpg" alt="">
+                </div>
+                <div class="button-cta button-cta--constrast">
+                    <p>Conheça mais o nosso portfólio</p>
+                    <a href="#" class="button">Portfólio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality">
+            <div class="container">
+                <h2 class="title-section">Qualidade</h2>
+                <div class="quality-description">
+                    <div class="quality-logo">
+                        <img src="images/bikcraft-qualidade.svg" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <h3 class="title-section">Durabilidade</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sit?</p>
+                        </li>
+                        <li>
+                            <h3 class="title-section">Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sit?</p>
+                        </li>
+                        <li>
+                            <h3 class="title-section">Sustentabilidade</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sit?</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-cta">
+                    <p>Conheça mais a história da Bikcraft</p>
+                    <a href="#" class="button">Sobre</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <blockquote class="block-quote block-quote--footer">
+                <p>
+                    “O verdadeiro segredo da vida cotidiana está em ter um genuíno interesse por todos os detalhes da
+                    vida
+                    cotidiana”
+                </p>
+                <cite>William Morris</cite>
+            </blockquote>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-content">
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Nossa história</h2>
+                    <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da
+                        vida
+                        cotidiana O verdadeiro segredo</p>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Contato</h2>
+                    <div>
+                        <a href="tel:11 9999-9999" class="contact-link">11 9999-9999</a>
+                        <a href="mailto:contato@bikcraft.com" class="contact-link">contato@bikcraft.com</a>
+                        <p class="contact-link">Bragança Paulista, SP</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="title-section title-section--primary title-section--left">Redes sociais</h2>
+                    <ul class="social-media">
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" rel="noopener noreferrer"><img
+                                    src="images/redes-sociais/twitter.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">Bikcraft 2021 - Todos os direitos reservados</div>
+    </footer>
+</body>
+
+</html>

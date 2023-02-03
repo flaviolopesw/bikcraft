@@ -1,0 +1,158 @@
+.product-title {
+    color: var(--third);
+    position: relative;
+    width: fit-content;
+    line-height: 2;
+    font-size: 4.5rem;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: var(--third);
+        text-align: left;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: var(--third);
+        text-align: left;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.product {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: .5fr .15fr .35fr;
+    margin-bottom: 60px;
+}
+
+.product-image {
+    grid-column: span 2;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--tour {
+        background-image: url(../../images/produtos/bikcraft-passeio-1.jpg);
+    }
+
+    &--sport {
+        background-image: url(../../images/produtos/bikcraft-esporte-1.jpg);
+    }
+
+    &--retro {
+        background-image: url(../../images/produtos/bikcraft-retro-1.jpg);
+    }
+}
+
+.product-icon {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.product-photo {
+    width: 100%;
+}
+
+.product-content {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary);
+
+    p {
+        color: var(--third);
+        padding: 30px;
+        font-size: 2.3rem;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+        text-align: center;
+    }
+
+    li {
+        background-color: var(--primary);
+        padding: 15px 10px;
+        font-weight: bold;
+    }
+}
+
+.budget {
+    background-color: var(--secondary);
+    padding-block: 60px;
+}
+
+
+/*----------  MOBILE  ----------*/
+
+@media (max-width: 1024px) {
+    .product-title {
+        font-size: 4.5rem;
+    }
+
+    .product {
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+    }
+
+
+    .product-image {
+        grid-column: 1;
+    }
+
+    .product-icon {
+        grid-column: 2;
+        padding: 10px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .product-content {
+        grid-column: span 2;
+    }
+
+    .product-photo {
+        grid-column: span 2;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .product-title {
+        font-size: 3rem;
+    }
+
+    .product {
+        gap: 10px;
+    }
+
+    .product-icon {
+        padding: 5px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+}

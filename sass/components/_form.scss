@@ -1,0 +1,90 @@
+.budget-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+
+    &--contrast {
+        .budget-form-field {
+            color: var(--third);
+            input, textarea{
+                color: var(--third);
+            }
+        }
+
+
+    }
+}
+
+.budget-form-field {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary);
+
+    input, textarea{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border: 4px solid var(--primary);
+        margin-bottom: 20px;
+        margin-top: 3px;
+        color: var(--secondary);
+        outline: none;
+
+        &:focus-within {
+            border-color: tomato;
+        }
+    }
+
+    input{
+        height: 45px;
+    }
+
+    select {
+        background-color: transparent;
+        color: var(--third);
+        width: 100%;
+        border: none;
+        height: 45px;
+        
+        option {
+            background-color: var(--secondary);
+            color: var(--third);
+        }
+    }
+
+    .specs-bikcraft{
+        select{
+            font-size: 2rem;
+            outline: none;
+            padding-left: 10px;
+        }
+
+        &:nth-child(odd){
+            select {
+                background-color: #292929;
+            }
+        }
+    }
+
+    .contact {
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+/*----------  MOBILE  ----------*/
+
+@media (max-width: 1024px) {
+    .budget-form {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-form-field:nth-child(1){
+        grid-row: 2;
+    }
+    // .budget-form-field:nth-child(2){
+    //     grid-row: 1;
+    // }
+}

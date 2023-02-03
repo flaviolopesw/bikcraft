@@ -1,0 +1,23 @@
+.about-description {
+    display: grid;
+    gap: 60px 40px;
+    grid-template-columns: 0.6fr 0.4fr;
+
+    img{
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+
+/*----------  MOBILE  ----------*/
+
+@media (max-width: 768px) {
+    .about-description {
+        grid-template-columns: 1fr;
+        
+        img {
+            grid-column: 1;
+        }
+    }
+}

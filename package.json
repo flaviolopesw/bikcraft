@@ -1,0 +1,23 @@
+{
+  "name": "example-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch sass/style.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brendovisk/example-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brendovisk/example-website/issues"
+  },
+  "homepage": "https://github.com/Brendovisk/example-website#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
